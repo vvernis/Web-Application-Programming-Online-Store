@@ -1,0 +1,46 @@
+.icon_header img{
+    margin-top: 5px;
+    padding: 5px;
+    width: 13%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-top: 50px;
+}
+
+.image {
+    flex-basis: 40%;
+    padding-left: 40px;
+}
+
+.text-content {
+    align-content: right;
+    padding-left: 20px;
+}
+
+.text-content h2{
+    position: relative;
+    top: 0%;
+    width: 80%;
+    text-align: left; 
+    overflow: hidden;
+    margin-top: 25px;
+    font-family: 'fantasy;', chalkduster; 
+    font-size: 7vw;
+    color: teal;
+}
+
+.text-content p{
+    position: relative;
+    top: 0%;
+    width: 80%;
+    text-align: left; 
+    overflow: hidden;
+    margin-top: 25px;
+    font-family: 'fantasy;', chalkduster; 
+    font-size: 2vw;
+    color: teal;
+}

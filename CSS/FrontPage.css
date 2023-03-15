@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    }
+
+.icon_header img{
+    position: sticky;
+    margin-top: 5px;
+    padding: 10px;
+    width: 13%;
+}
+
+  /* Style the video: 100% width and height to cover the entire window */
+.video-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: black;
+    z-index: -1;
+}
+
