@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Catalogue</title>
+  <link rel="icon" type="image/png" href="./Images/popmart_logo.png">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+<!---- header ---->
+
+<!---- title ---->
+  <h2 class = "title">Jurassic<br>Series</h2>
+  <h3>Rawr!<br>Introducing the Dimoo Jurassic Series!</h3> 
+
+<!---- background ---->
+  <style>
+  body {
+    background-image: url('https://i.ibb.co/4tPsDzz/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  </style>
+
+  <div id="includeHtml"></div>  
+
+<!---- sort items---->
+
+  <div class="sort">
+    <select>
+      <option>Default Sorting</option>
+      <option>Sort by Price - Low to High</option>
+      <option>Sort by Price - High to Low</option>
+    </select>
+  </div>
+
+<!---- items ---->
+  <div class="items">
+    <div class="column">
+      <img src = "Images/StockImg/babydinosaur.jpg" style="width:100%">
+      <h4>Baby Dinosaur</h4>
+      <p>$13.90</p>
+    </div>
+
+    <div class="column">
+      <img src = "Images/StockImg/historyegg.jpg" style="width:100%">
+      <h4>History Egg</h4>
+      <p>$12.90</p>
+    </div>
+
+    <div class="column">
+      <img src = "Images/StockImg/mrguide.jpg" style="width:100%">
+      <h4>Mr. Guide</h4>
+      <p>$10.90</p>
+    </div>
+
+    <div class="column">
+      <img src = "Images/StockImg/sirparaglider.jpg" style="width:100%">
+      <h4>Sir Paraglider</h4>
+      <p>$10.90</p>
+    </div>
+
+    <div class="column">
+      <img src = "Images/StockImg/tourball.jpg" style="width:100%">
+      <h4>Tour Ball</h4>
+      <p>$15.90</p>
+    </div>
+  </div>
+
+    
+
+<!---- footer ---->
+
+
+  </form>
+</body>
+
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <script>
+      $(function() { //to call for menu.html
+         $("#includeHtml").load("./Includes/Menu.html");
+      });
+   </script>
+
+</html>

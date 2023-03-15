@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>POPMART</title>
+<link rel="stylesheet" type="text/css" href="CSS/FrontPage.css">
+<link rel="icon" type="image/png" href="./Images/popmart_logo.png">
+
+</head>
+
+<body1>
+
+            <form method="get" action="popmart">
+
+            <div class="video-container"> 
+                <video width="100%" height="100%" src= "./Images/jurassic1_vid.mp4" muted loop autoplay></video>
+            </div>
+
+            <div class="icon_header">
+                <img src="Images/popmart_logo.png"  />
+            </div>
+
+            <div id="includeHtml"></div>
+
+            <div class="audio-box">
+                <audio id="myAudio"  src="./Images/jurassic_aud.mp3" loop> 
+            </div>  
+            </form>
+ </body1>
+    
+<script>
+    navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
+
+    var x = document.getElementById("myAudio"); 
+    x.play();
+
+    // stop microphone stream acquired by getUserMedia
+    stream.getTracks().forEach(function (track) { track.stop(); });
+    });
+
+</script>  
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <script>
+      $(function() { //to call for menu.html
+         $("#includeHtml").load("./Includes/Menu.html");
+      });
+   </script>
+        
+</html>
